@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Pessoas</title>
+  <!-- Liga o arquivo de estilo (aparência de celular) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Moldura que simula a tela do celular -->
+  <div class="celular">
+    <h1>Cadastro</h1>
+    <p class="dica">Toque em um nome para recuperar os dados</p>
+
+    <!-- O JavaScript cria aqui os botões com os nomes -->
+    <div id="listaUsuarios"></div>
+
+    <!-- Formulário preenchido automaticamente pelo JavaScript -->
+    <label for="nome">Nome</label>
+    <input id="nome" type="text" placeholder="Nome">
+
+    <label for="email">E-mail</label>
+    <input id="email" type="email" placeholder="E-mail">
+
+    <label for="telefone">Telefone</label>
+    <input id="telefone" type="text" placeholder="Telefone">
+  </div>
+
+  <!-- Liga o JavaScript ao final da página, depois dos elementos existirem -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Fundo da página: centraliza o "celular" */
+body {
+  font-family: Arial, sans-serif;
+  background: #e9eef5;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 0;
+}
+
+/* Moldura do celular */
+.celular {
+  width: 320px;
+  max-width: 100%;
+  min-height: 580px;
+  background: white;
+  border: 10px solid #111827;
+  border-radius: 30px;
+  padding: 22px;
+  box-shadow: 0 10px 30px #999;
+  box-sizing: content-box;
+}
+
+h1 {
+  text-align: center;
+  color: #1d4ed8;
+  margin: 0 0 4px;
+}
+
+.dica {
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0 0 16px;
+}
+
+/* Área dos botões com os nomes */
+#listaUsuarios {
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+input {
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+/* Botões dos nomes */
+button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+button:hover { background: #1d4ed8; }
+
+/* Botão do nome selecionado */
+button.ativo { background: #111827; }
+
+/* Responsivo: telas pequenas */
+@media (max-width: 400px) {
+  body { padding: 10px; }
+  .celular { min-height: auto; }
+}
